@@ -61,9 +61,9 @@ namespace HOME_TASK_4___12.AUG_ucun
 
             // 4. Write a program in C# Sharp to read any day number in integer and display day name in the word.
 
-            //Console.WriteLine("Enter Day :");
-            //string weekday = Console.ReadLine();
-            //int weekdayNum = int.Parse(weekday);
+            //Console.WriteLine("Enter The Number Of Day :");
+            ////string weekday = Console.ReadLine();
+            //int weekdayNum = int.Parse(Console.ReadLine());
 
             //switch (weekdayNum)
             //{
@@ -97,62 +97,62 @@ namespace HOME_TASK_4___12.AUG_ucun
 
 
 
+
+
             // 5. Write a program in C# Sharp which is a Menu-Driven Program to perform a simple calculation.
 
-            Console.Write("Enter a : ");
-            string str_a = Console.ReadLine();
-            int int_a = int.Parse(str_a);
+            //Console.Write("Enter a : ");
+            //string a = Console.ReadLine();
+            //int b = int.Parse(a);
 
-            Console.Write("Enter b : ");
-            string str_b = Console.ReadLine();
-            int int_b = int.Parse(str_b);
+            //Console.Write("Enter c : ");
+            //string c = Console.ReadLine();
+            //int d = int.Parse(c);
 
-            Console.WriteLine("1.+    2.-    3.*    4./");
-            Console.Write("Choose :");
-            string str_op = Console.ReadLine();
-            switch (str_op)
-            {
-                case "Toplama":
-                    Console.WriteLine((int_a, int_b));
-                    break;
-                case "Cixma":
-                    Console.WriteLine((int_a, int_b));
-                    break;
-                case "Vurma":
-                    Console.WriteLine((int_a, int_b));
-                    break;
-                case "Bolme":
-                    Console.WriteLine((int_a, int_b));
-                    break;
-                default:
-                    break;
-            }
-            Console.ReadLine();
-            
-
-
+            //Console.WriteLine("1.+    2.-    3.*    4./");
+            //Console.Write("Choose :");
+            //string e = Console.ReadLine();
+            //switch (e)
+            //    //Burda string olan abzasin yerine birbasa console readline yazib. Asagidaki " isaresini sile bilerik
+            //{
+            //    case "1":
+            //        Console.WriteLine((b + d));
+            //        break;
+            //    case "2":
+            //        Console.WriteLine((b - d));
+            //        break;
+            //    case "3":
+            //        Console.WriteLine((b * d));
+            //        break;
+            //    case "4":
+            //        Console.WriteLine((b / d));
+            //        break;
+            //    default:
+            //        Console.WriteLine("");
+            //        break;
+            //}
 
 
 
             // 6. Write a program in C# to check whether a number is a palindrome (visual simmetric) or not.
 
-            //int num, i, rev;
+            int num, i, rev;
 
-            //Console.Write("Enter any number : ");
-            //num = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter any number : ");
+            num = Convert.ToInt32(Console.ReadLine());
 
-            //rev = num;
-            //for (i = 0; num > 0; num = num / 10)
-            //{
-            //    i = i * 10;
-            //    i = i + (num % 10);
-            //}
+            rev = num;
+            for (i = 0; num > 0; num = num / 10)
+            {
+                i = i * 10;
+                i = i + (num % 10);
+            }
 
-            ////Checking if reverse number is equal to original num or not.
-            //if (rev == i)
-            //    Console.WriteLine(rev + " is a Palindrome Number.");
-            //else
-            //    Console.WriteLine(rev + " is not a Palindrome Number.");
+            //Checking if reverse number is equal to original num or not.
+            if (rev == i)
+                Console.WriteLine(rev + " is a Palindrome Number.");
+            else
+                Console.WriteLine(rev + " is not a Palindrome Number.");
 
 
 
@@ -160,19 +160,19 @@ namespace HOME_TASK_4___12.AUG_ucun
 
             // 7. Write a program in C# to create a function to calculate the sum of the individual digits of a given number.
 
-            //Console.Write("Enter the Number : ");
-            //int number = int.Parse(Console.ReadLine());
-            //int sum = 0, A;
+            Console.Write("Enter the Number : ");
+            int number = int.Parse(Console.ReadLine());
+            int sum = 0, A;
 
-            //while (number > 0)
-            //{
-            //    A = number % 10;
-            //    sum = sum + A;
-            //    number = number / 10;
-            //}
+            while (number > 0)
+            {
+                A = number % 10;
+                sum = sum + A;
+                number = number / 10;
+            }
 
-            //Console.WriteLine($"The Sum of Digits is : {sum}");
-            //Console.ReadKey();
+            Console.WriteLine($"The Sum of Digits is : {sum}");
+            Console.ReadKey();
 
 
 
